@@ -1,0 +1,106 @@
+.navbar {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  border-bottom: 0.5px solid rgb(230, 227, 227);
+  font-size: 14px;
+  color: #555;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    border: 0.5px solid lightgray;
+    padding: 3px;
+
+    input {
+      border: none;
+      outline: none;
+      background: transparent;
+
+      &::placeholder {
+        font-size: 12px;
+      }
+    }
+
+    .search-icon {
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  .nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: auto;
+
+    .icon {
+      cursor: pointer;
+    }
+
+    .language {
+      display: flex;
+      align-items: center;
+    }
+
+    .notifications {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .messages {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .counter {
+      position: absolute;
+      top: -4px;
+      right: -4px;
+      width: 16px;
+      height: 16px;
+      background-color: red;
+      color: white;
+      font-size: 10px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .avatar {
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+    }
+
+    @media (max-width: 768px) {
+      margin-left: 0;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 12px;
+    }
+  }
+}

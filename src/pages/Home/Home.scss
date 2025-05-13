@@ -1,0 +1,15 @@
+.home {
+  display: flex;
+
+  .nav-cont {
+    display: flex;
+    flex-direction: column;
+    flex: 6;
+  }
+
+  .widgets {
+    display: flex;
+    margin: 15px;
+    gap: 10px;
+  }
+}
