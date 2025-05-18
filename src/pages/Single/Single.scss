@@ -1,0 +1,117 @@
+.single {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  .single-container {
+    flex: 6;
+
+    .top-container {
+      display: flex;
+      .profile-card {
+        display: flex;
+        flex-direction: column;
+        flex: 4;
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        border-radius: 10px;
+        margin: 15px;
+        padding: 5px;
+      }
+
+      .graph {
+        flex: 8;
+        margin: 15px;
+      }
+
+      .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+          font-size: 16px;
+          font-weight: 600;
+          color: #c4c4c4;
+        }
+
+        .edit-button {
+          padding: 15px;
+          font-size: 12px;
+          color: #7451f8;
+          background-color: #7551f818;
+          cursor: pointer;
+          border-radius: 0px 0px 0px 12px;
+        }
+      }
+
+      .bottom {
+        display: flex;
+        align-items: flex-start; // align both items to top
+        gap: 20px;
+        padding: 10px;
+        margin-top: 20px;
+
+        .left {
+          display: flex;
+          align-items: flex-start; // ensures image sticks to top
+          height: 100px; // same as image
+          .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+        }
+
+        .right {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+
+          .details {
+            margin: 0;
+            padding: 0;
+
+            .itemTitle {
+              color: #555;
+              margin: 0;
+              padding: 0;
+              line-height: 1.2;
+              margin-bottom: 10px;
+            }
+
+            .detailItem {
+              margin-bottom: 10px;
+              font-size: 14px;
+
+              .itemKey {
+                font-weight: bold;
+                color: gray;
+                margin-right: 5px;
+              }
+
+              .itemValue {
+                font-weight: 300;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .bottom-container {
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      padding: 20px;
+      margin: 10px 20px;
+
+      .title {
+        font-size: 16px;
+        font-weight: 600;
+        color: #c4c4c4;
+      }
+    }
+  }
+}
